@@ -18,17 +18,30 @@ org.gnome.DejaDup
   - Ctrl + Alt + t
 
 ### Extensions
-#### Extension Manager Flatpak
-Software > Extension Manager
-
-#### Install Third Party Extensions
+#### Third Party Extensions
 - Vitals by Vitals@CoreCoding.com
 - User Themes
 - Impatience
 
-#### Enable System Extensions
+#### System Extensions
 - Window List
 - Places Status Indicator
+
+```bash
+# Install Third Party Extensions
+gnome-extensions install Vitals@CoreCoding.com
+sudo dnf install gnome-shell-extension-user-theme
+gnome-extensions install impatience@gfxmonk.net
+
+# Enable Third Party Extensions
+gnome-extensions enable Vitals@CoreCoding.com
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable impatience@gfxmonk.net
+
+# Enable System Extensions
+gnome-extensions enable window-list@gnome-shell-extensions.gcampax.github.com
+gnome-extensions enable places-menu@gnome-shell-extensions.gcampax.github.com
+```
 
 ### Tweaks
 ```bash
