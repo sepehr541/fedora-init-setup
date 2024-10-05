@@ -8,7 +8,8 @@ ca.desrt.dconf-editor \
 org.zotero.Zotero \
 org.mozilla.Thunderbird \
 com.mattjakeman.ExtensionManager \
-org.gnome.DejaDup
+org.gnome.DejaDup \
+org.localsend.localsend_app
 ```
 ## Gnome
 ### Shortcuts
