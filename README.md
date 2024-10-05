@@ -7,7 +7,8 @@ com.brave.Browser \
 ca.desrt.dconf-editor \
 org.zotero.Zotero \
 org.mozilla.Thunderbird \
-com.mattjakeman.ExtensionManager
+com.mattjakeman.ExtensionManager \
+org.gnome.DejaDup
 ```
 ## Gnome
 ### Shortcuts
