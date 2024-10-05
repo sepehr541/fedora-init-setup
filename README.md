@@ -34,3 +34,18 @@ Software > Extension Manager
 ```bash
 sudo dnf install -y gnome-tweaks
 ```
+- Fonts > Scaling Factor > 1.20
+- Dracula Theme
+```bash
+wget "https://github.com/dracula/gtk/archive/master.zip" -O temp.zip
+unzip temp.zip
+rm temp.zip
+mv gtk-master Dracula
+mkdir ~/.themes/
+mv Dracula ~/.themes/
+ln -s ~/.themes/Dracula/assets ~/.config/assets
+ln -s ~/.themes/Dracula/gtk-4.0/gtk.css ~/.config/gtk-4.0/gtk.css
+ln -s ~/.themes/Dracula/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk-dark.css
+gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
+gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+```
