@@ -32,5 +32,5 @@ Software > Extension Manager
 
 ### Tweaks
 ```bash
-sudo dnf install gnome-tweaks
+sudo dnf install -y gnome-tweaks
 ```
