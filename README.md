@@ -30,3 +30,7 @@ Software > Extension Manager
 - Window List
 - Places Status Indicator
 
+### Tweaks
+```bash
+sudo dnf install gnome-tweaks
+```
