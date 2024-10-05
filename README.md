@@ -75,3 +75,15 @@ distrobox \
 emacs \
 ranger
 ```
+
+## Kitty
+```bash
+wget "https://github.com/dracula/kitty/archive/master.zip" -O temp.zip
+unzip temp.zip
+rm temp.zip
+mkdir -q ~/.config/kitty/
+touch ~/.config/kitty/kitty.conf
+cp kitty-master/dracula.conf kitty-master/diff.conf ~/.config/kitty/
+echo "include dracula.conf" >> ~/.config/kitty/kitty.conf
+echo "font_size 14" >> ~/.config/kitty/kitty.conf
+```
