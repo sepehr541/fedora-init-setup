@@ -64,3 +64,13 @@ gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
 ```
+
+## DNF packages
+```bash
+sudo dnf install -y \
+zsh \
+kitty \
+distrobox \
+emacs \
+ranger
+```
