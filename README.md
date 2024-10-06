@@ -11,6 +11,18 @@ com.mattjakeman.ExtensionManager \
 org.gnome.DejaDup \
 org.localsend.localsend_app
 ```
+
+## DNF packages
+```bash
+sudo dnf install -y \
+zsh \
+kitty \
+distrobox \
+emacs \
+ranger \
+gnome-tweaks
+```
+
 ## Gnome
 ### Shortcuts
 - Settings > Keyboard > View and Customize Shortcuts > Custom Shortcuts > Add Shortcut
@@ -45,9 +57,6 @@ gnome-extensions enable places-menu@gnome-shell-extensions.gcampax.github.com
 ```
 
 ### Tweaks
-```bash
-sudo dnf install -y gnome-tweaks
-```
 - Fonts > Scaling Factor > 1.20
 - Dracula Theme
 ```bash
@@ -64,16 +73,6 @@ ln -s ~/.themes/Dracula/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk-dark.css
 gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
-```
-
-## DNF packages
-```bash
-sudo dnf install -y \
-zsh \
-kitty \
-distrobox \
-emacs \
-ranger
 ```
 
 ## Kitty
