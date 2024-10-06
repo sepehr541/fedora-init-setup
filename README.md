@@ -113,3 +113,10 @@ sudo tailscale up
 
 ## Enrol Fingerprint
 Settings > System > Users > Fingerprint Login
+
+## Emacs
+```bash
+cd
+git clone git@github.com:sepehr541/.emacs.d.git
+```
+
