@@ -9,7 +9,8 @@ org.zotero.Zotero \
 org.mozilla.Thunderbird \
 com.mattjakeman.ExtensionManager \
 org.gnome.DejaDup \
-org.localsend.localsend_app
+org.localsend.localsend_app \
+com.github.wwmm.easyeffects
 ```
 
 ## DNF packages
@@ -35,26 +36,11 @@ gnome-tweaks
 - Vitals by Vitals@CoreCoding.com
 - User Themes
 - Impatience
+- EasyEffects
 
 #### System Extensions
 - Window List
 - Places Status Indicator
-
-```bash
-# Install Third Party Extensions
-gnome-extensions install Vitals@CoreCoding.com
-sudo dnf install gnome-shell-extension-user-theme
-gnome-extensions install impatience@gfxmonk.net
-
-# Enable Third Party Extensions
-gnome-extensions enable Vitals@CoreCoding.com
-gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
-gnome-extensions enable impatience@gfxmonk.net
-
-# Enable System Extensions
-gnome-extensions enable window-list@gnome-shell-extensions.gcampax.github.com
-gnome-extensions enable places-menu@gnome-shell-extensions.gcampax.github.com
-```
 
 ### Tweaks
 - Fonts > Scaling Factor > 1.20
