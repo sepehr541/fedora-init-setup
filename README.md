@@ -104,3 +104,9 @@ mkdir -p ~/.ssh
 unzip ssh.zip -d ~/.ssh
 # add "IgnoreUnknown UseKeychain" to the top of .ssh/config
 ```
+
+## Tailscale
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
+```
