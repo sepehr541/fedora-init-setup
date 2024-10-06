@@ -151,5 +151,6 @@ wget https://gist.githubusercontent.com/cab404/aeb2482e1af6fc463e1154017c566560/
 sudo nano /etc/default/grub
 # append amdgpu.sg_display=0
 # GRUB_CMDLINE_LINUX_DEFAULT="[...] quiet splash amdgpu.sg_display=0"
-sudo update-grub
+#sudo update-grub
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
