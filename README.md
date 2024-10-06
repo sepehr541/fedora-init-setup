@@ -126,3 +126,7 @@ done
 mv tree-sitter ~/.emacs.d/
 ```
 
+## EasyEffects Preset
+```bash
+wget https://gist.githubusercontent.com/cab404/aeb2482e1af6fc463e1154017c566560/raw/3d40d870e4b496b0dc029fff50544d7d31ba5992/Cab's%2520Fav.json
+```
