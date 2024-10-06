@@ -61,6 +61,12 @@ gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 gsettings set org.gnome.shell.extensions.user-theme name 'Dracula'
 ```
+### Fractional Scaling
+```bash
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+# logout and login to see options
+```
+
 
 ## Kitty
 ```bash
