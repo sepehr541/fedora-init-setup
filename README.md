@@ -21,7 +21,8 @@ kitty \
 distrobox \
 emacs \
 ranger \
-gnome-tweaks
+gnome-tweaks \
+grub2-common
 ```
 
 ## Gnome
