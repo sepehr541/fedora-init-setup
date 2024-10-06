@@ -81,9 +81,27 @@ ranger
 wget "https://github.com/dracula/kitty/archive/master.zip" -O temp.zip
 unzip temp.zip
 rm temp.zip
-mkdir -q ~/.config/kitty/
+mkdir -p ~/.config/kitty/
 touch ~/.config/kitty/kitty.conf
 cp kitty-master/dracula.conf kitty-master/diff.conf ~/.config/kitty/
 echo "include dracula.conf" >> ~/.config/kitty/kitty.conf
 echo "font_size 14" >> ~/.config/kitty/kitty.conf
+```
+
+## Zsh
+- Install Oh-my-zsh
+  ```bash
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ```
+- Set alias for kitty ssh
+  ```bash
+  echo 'alias s="kitten ssh"' >> ~/.zshrc
+  source ~/.zshrc
+  ```
+
+## SSH Keys
+```bash
+mkdir -p ~/.ssh
+unzip ssh.zip -d ~/.ssh
+# add "IgnoreUnknown UseKeychain" to the top of .ssh/config
 ```
