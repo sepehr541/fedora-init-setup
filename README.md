@@ -115,8 +115,28 @@ sudo tailscale up
 Settings > System > Users > Fingerprint Login
 
 ## Emacs
+### Config
 ```bash
 cd
 git clone git@github.com:sepehr541/.emacs.d.git
+```
+### TreeSitter langs
+```bash
+# Download latest release
+curl -s https://api.github.com/repos/emacs-tree-sitter/tree-sitter-langs/releases/latest \
+| grep -oP 'https.*tree-sitter-grammars-linux.*gz' \
+| xargs wget
+
+# extract to tree-sitter
+# rename all files to libtree-sitter-<LANG>.so
+mkdir -p tree-sitter && \
+tar -xzf tree-sitter.tar.gz -C tree-sitter && \ 
+find tree-sitter -type f -name "*.so" | while read -r file; do \
+    lang=$(basename "$file" .so); \
+    mv "$file" "$(dirname "$file")/libtree-sitter-$lang.so"; \
+done
+
+# move to .emacs.d
+mv tree-sitter ~/.emacs.d/
 ```
 
