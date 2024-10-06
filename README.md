@@ -130,3 +130,16 @@ mv tree-sitter ~/.emacs.d/
 ```bash
 wget https://gist.githubusercontent.com/cab404/aeb2482e1af6fc463e1154017c566560/raw/3d40d870e4b496b0dc029fff50544d7d31ba5992/Cab's%2520Fav.json
 ```
+
+## FireFox
+### Remove Titlebar + Tabs
+≡ > Help > More troubleshooting information > Application Basics > Profile Dierctory > Open Directory
+- create a directory called `chrome`
+- create a file falled `userChrome.css`
+  ```css
+  #titlebar {
+    visibility: collapse;
+  }
+  ```
+- in URL bar > about:config
+- search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`
