@@ -110,3 +110,6 @@ unzip ssh.zip -d ~/.ssh
 curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up
 ```
+
+## Enrol Fingerprint
+Settings > System > Users > Fingerprint Login
