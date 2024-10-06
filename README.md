@@ -143,3 +143,11 @@ wget https://gist.githubusercontent.com/cab404/aeb2482e1af6fc463e1154017c566560/
   ```
 - in URL bar > about:config
 - search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`
+
+## Kernel Parameters
+### AMD GPU
+```bash
+sudo nano /etc/default/grub
+# append amdgpu.sg_display=0
+# GRUB_CMDLINE_LINUX_DEFAULT="[...] quiet splash amdgpu.sg_display=0"
+```
