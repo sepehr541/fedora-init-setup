@@ -1,4 +1,4 @@
-# Linux Fresh Install Initial Setup
+# Fedora Workstation Fresh Install Initial Setup
 ## Flatpaks
 ```bash
 flatpak install -y \
