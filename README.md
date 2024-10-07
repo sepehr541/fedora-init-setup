@@ -28,7 +28,7 @@ grub2-common
 ## Gnome
 ### Shortcuts
 - Settings > Keyboard > View and Customize Shortcuts > Custom Shortcuts > Add Shortcut
-  - Lauch Terminal
+  - Launch Terminal
   - `gnome-terminal` or `kitty`
   - Ctrl + Alt + t
 
@@ -160,3 +160,7 @@ sudo nano /etc/default/grub
 #sudo update-grub
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
+
+## CA certificates
+- certs are under `/etc/ssl/certs/`
+- e.g., `/etc/ssl/certs/Digicert_Global_Root_CA.crt`
