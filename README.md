@@ -34,10 +34,10 @@ grub2-common
 
 ### Extensions
 #### Third Party Extensions
-- Vitals by Vitals@CoreCoding.com
-- User Themes
-- Impatience
-- EasyEffects
+- [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+- [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+- [Impatience](https://extensions.gnome.org/extension/277/impatience/)
+- [EasyEffects Preset Selector](https://extensions.gnome.org/extension/4907/easyeffects-preset-selector/)
 
 #### System Extensions
 - Window List
