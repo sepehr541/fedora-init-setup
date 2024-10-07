@@ -22,7 +22,8 @@ distrobox \
 emacs \
 ranger \
 gnome-tweaks \
-grub2-common
+grub2-common \
+perf
 ```
 
 ## Gnome
