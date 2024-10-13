@@ -90,6 +90,17 @@ echo "font_size 14" >> ~/.config/kitty/kitty.conf
   echo 'alias s="kitten ssh"' >> ~/.zshrc
   source ~/.zshrc
   ```
+- add container emoji to prompt to default Oh My Zsh
+  ```text
+    update_prompt_in_container() {
+    if [[ -n "$CONTAINER_ID" && "$PROMPT" != *"📦"* ]]; then
+        PROMPT="📦 $PROMPT"
+    elif [[ -z "$CONTAINER_ID" && "$PROMPT" == *"📦"* ]]; then
+        PROMPT="${PROMPT/📦 /}"  # Remove emoji when not in container
+    fi
+    }
+    precmd_functions+=(update_prompt_in_container)
+  ```
 
 ## SSH Keys
 ```bash
