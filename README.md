@@ -92,6 +92,7 @@ echo "font_size 14" >> ~/.config/kitty/kitty.conf
   ```
 - add container emoji to prompt to default Oh My Zsh
   ```text
+    # in .zshrc
     update_prompt_in_container() {
     if [[ -n "$CONTAINER_ID" && "$PROMPT" != *"📦"* ]]; then
         PROMPT="📦 $PROMPT"
