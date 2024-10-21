@@ -102,6 +102,22 @@ echo "font_size 14" >> ~/.config/kitty/kitty.conf
     }
     precmd_functions+=(update_prompt_in_container)
   ```
+- add zsh-autosuggestions plugin
+  ```bash
+  # clone the plugin
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ```
+  ```bash
+  # add plugin to .zshrc
+  nano ~/.zshrc
+  ```
+  ```bash
+  plugins=( 
+    # other plugins...
+    zsh-autosuggestions
+  )
+  ```
+  
 
 ## SSH Keys
 ```bash
