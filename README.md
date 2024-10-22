@@ -22,7 +22,8 @@ distrobox \
 emacs \
 ranger \
 gnome-tweaks \
-grub2-common
+grub2-common \
+bat
 ```
 
 ## Gnome
@@ -79,6 +80,10 @@ cp kitty-master/dracula.conf kitty-master/diff.conf ~/.config/kitty/
 echo "include dracula.conf" >> ~/.config/kitty/kitty.conf
 echo "font_size 14" >> ~/.config/kitty/kitty.conf
 ```
+### Keyboard shortcuts
+- split window: `ctrl + shift + enter`
+- change window layout `ctr + shift + l`
+- change focus between windows `ctrl + shift + [` and `ctrl + shift + ]`
 
 ## Zsh
 - Install Oh-my-zsh
@@ -108,7 +113,6 @@ echo "font_size 14" >> ~/.config/kitty/kitty.conf
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   ```
   ```bash
-  # add plugin to .zshrc
   nano ~/.zshrc
   ```
   ```bash
@@ -116,6 +120,13 @@ echo "font_size 14" >> ~/.config/kitty/kitty.conf
     # other plugins...
     zsh-autosuggestions
   )
+  ```
+- syntax highlighting for `less` using `bat` (or `batcat` on Ubuntu?)
+  ```zsh
+  nano ~/.zshrc
+  ```
+  ```zsh
+  export LESSOPEN='|bat --paging=never --color=always %s'
   ```
   
 
