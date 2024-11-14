@@ -39,6 +39,7 @@ bat
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [EasyEffects Preset Selector](https://extensions.gnome.org/extension/4907/easyeffects-preset-selector/)
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+- [Start Overlay in Application View](https://extensions.gnome.org/extension/5040/start-overlay-in-application-view/)
 
 #### System Extensions
 - Window List
