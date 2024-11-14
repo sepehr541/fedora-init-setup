@@ -37,8 +37,8 @@ bat
 #### Third Party Extensions
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
-- [Impatience](https://extensions.gnome.org/extension/277/impatience/)
 - [EasyEffects Preset Selector](https://extensions.gnome.org/extension/4907/easyeffects-preset-selector/)
+- [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
 
 #### System Extensions
 - Window List
