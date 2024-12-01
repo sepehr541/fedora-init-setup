@@ -184,7 +184,7 @@ wget https://gist.githubusercontent.com/cab404/aeb2482e1af6fc463e1154017c566560/
 - create a directory called `chrome`
 - create a file falled `userChrome.css`
   ```css
-  #titlebar {
+  .browser-titlebar {
     visibility: collapse;
   }
   ```
