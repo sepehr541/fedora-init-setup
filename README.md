@@ -204,3 +204,6 @@ sudo grub2-mkconfig
 ## CA certificates
 - certs are under `/etc/ssl/certs/`
 - e.g., `/etc/ssl/certs/Digicert_Global_Root_CA.crt`
+
+## Caps Lock as Ctrl
+- GNOME Tweaks > Keyboard > Additional Layout Options > Ctrl Position > Caps Lock as Ctrl
