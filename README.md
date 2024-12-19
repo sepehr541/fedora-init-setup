@@ -60,6 +60,7 @@ sudo dnf install gnome-shell-extension-pop-shell xprop
 - [EasyEffects Preset Selector](https://extensions.gnome.org/extension/4907/easyeffects-preset-selector/)
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
 - [Start Overlay in Application View](https://extensions.gnome.org/extension/5040/start-overlay-in-application-view/)
+- [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
 
 #### System Extensions
 - Window List
