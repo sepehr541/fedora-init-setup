@@ -10,7 +10,9 @@ org.mozilla.Thunderbird \
 com.mattjakeman.ExtensionManager \
 org.gnome.DejaDup \
 org.localsend.localsend_app \
-com.github.wwmm.easyeffects
+com.github.wwmm.easyeffects \
+it.mijorus.gearlever \
+io.github.flattool.Warehouse
 ```
 
 ## DNF packages
