@@ -41,6 +41,12 @@ gh
 ```
 
 ## Gnome
+### Pop Shell
+```bash
+sudo dnf install gnome-shell-extension-pop-shell xprop
+```
+- logout and log back in
+
 ### Shortcuts
 - Settings > Keyboard > View and Customize Shortcuts > Custom Shortcuts > Add Shortcut
   - Launch Terminal
