@@ -22,7 +22,8 @@ com.slack.Slack \
 com.spotify.Client \
 us.zoom.Zoom \
 org.qbittorrent.qBittorrent \
-com.bambulab.BambuStudio
+com.bambulab.BambuStudio \
+com.protonvpn.www
 ```
 
 ## DNF packages
