@@ -150,7 +150,14 @@ echo "font_size 14" >> ~/.config/kitty/kitty.conf
   ```zsh
   export LESSOPEN='|bat --paging=never --color=always %s'
   ```
-  
+- plugins
+  ```zsh
+  plugins=(
+  git
+  zsh-autosuggestions
+  dnf
+  )
+  ```
 
 ## SSH Keys
 ```bash
