@@ -36,7 +36,8 @@ emacs \
 ranger \
 gnome-tweaks \
 grub2-common \
-bat
+bat \
+gh
 ```
 
 ## Gnome
