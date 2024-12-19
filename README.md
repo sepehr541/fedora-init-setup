@@ -103,6 +103,7 @@ touch ~/.config/kitty/kitty.conf
 cp kitty-master/dracula.conf kitty-master/diff.conf ~/.config/kitty/
 echo "include dracula.conf" >> ~/.config/kitty/kitty.conf
 echo "font_size 14" >> ~/.config/kitty/kitty.conf
+echo "shell zsh" >> ~/.config/kitty/kitty.conf
 ```
 ### Keyboard shortcuts
 - split window: `ctrl + shift + enter`
