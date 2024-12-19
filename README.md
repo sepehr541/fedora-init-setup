@@ -84,6 +84,7 @@ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffe
 
 
 ## Kitty
+### Dracula Theme
 ```bash
 wget "https://github.com/dracula/kitty/archive/master.zip" -O temp.zip
 unzip temp.zip
