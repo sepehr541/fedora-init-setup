@@ -61,6 +61,7 @@ sudo dnf install gnome-shell-extension-pop-shell xprop
 - [Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
 - [Start Overlay in Application View](https://extensions.gnome.org/extension/5040/start-overlay-in-application-view/)
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
+- [Fedora Linux Update Indicator](https://extensions.gnome.org/extension/6406/fedora-linux-update-indicator/)
 
 #### System Extensions
 - Window List
