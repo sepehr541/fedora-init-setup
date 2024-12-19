@@ -37,7 +37,8 @@ ranger \
 gnome-tweaks \
 grub2-common \
 bat \
-gh
+gh \
+openssl
 ```
 
 ## Gnome
