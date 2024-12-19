@@ -12,7 +12,17 @@ org.gnome.DejaDup \
 org.localsend.localsend_app \
 com.github.wwmm.easyeffects \
 it.mijorus.gearlever \
-io.github.flattool.Warehouse
+io.github.flattool.Warehouse \
+org.videolan.VLC \
+org.ghidra_sre.Ghidra \
+org.lamport.tla.toolbox \
+com.visualstudio.code \
+org.telegram.desktop \
+com.slack.Slack \
+com.spotify.Client \
+us.zoom.Zoom \
+org.qbittorrent.qBittorrent \
+com.bambulab.BambuStudio
 ```
 
 ## DNF packages
