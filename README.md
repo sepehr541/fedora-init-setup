@@ -251,3 +251,26 @@ rclone config
 mkdir GDrive
 rclone mount --daemon --vfs-cache-mode full google-drive:/ ./GDrive
 ```
+### setup systemd service to automount on boot
+[modified version of this post's script](https://www.guyrutenberg.com/2021/06/25/autostart-rclone-mount-using-systemd/)
+```
+[Unit]
+Description=Mount Google Drive (rclone)
+AssertPathIsDirectory=%h/GDrive
+# Make sure we have network enabled
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount --vfs-cache-mode full google-drive: %h/GDrive
+Restart=on-failure
+RestartSec=15
+
+[Install]
+# Autostart after reboot
+WantedBy=default.target
+```
+```bash
+sudo systemctl --user daemon-reload
+sudo systemctl --user enable --now rclone-dropbox
+```
