@@ -8,7 +8,7 @@ ca.desrt.dconf-editor \
 org.zotero.Zotero \
 org.mozilla.Thunderbird \
 com.mattjakeman.ExtensionManager \
-org.gnome.DejaDup \
+org.gnome.World.PikaBackup \
 org.localsend.localsend_app \
 com.github.wwmm.easyeffects \
 it.mijorus.gearlever \
@@ -239,3 +239,14 @@ sudo grub2-mkconfig
 
 ## Caps Lock as Ctrl
 - GNOME Tweaks > Keyboard > Additional Layout Options > Ctrl Position > Caps Lock as Ctrl
+
+## Mount Google Drive via `rclone`
+[How to Use Google Drive in Linux](https://www.baeldung.com/linux/google-drive-guide#2-rclone)
+```
+sudo dnf install -y rclone
+rclone config
+# choose google drive (17 or 18)
+# leave everything empty
+mkdir GDrive
+rclone mount --daemon --vfs-cache-mode full google-drive:/ ./GDrive
+```
