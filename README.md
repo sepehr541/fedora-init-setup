@@ -23,7 +23,8 @@ com.spotify.Client \
 us.zoom.Zoom \
 org.qbittorrent.qBittorrent \
 com.bambulab.BambuStudio \
-com.protonvpn.www
+com.protonvpn.www \
+com.bitwarden.desktop
 ```
 
 ## DNF packages
