@@ -275,7 +275,7 @@ amdgpu.sg_display=0 amdgpu.abmlevel=0
 [modified version of this post's script](https://www.guyrutenberg.com/2021/06/25/autostart-rclone-mount-using-systemd/)
 - make service file
 ```bash
-mkdir  ~/.config/systemd/user/
+mkdir -p ~/.config/systemd/user/
 nano  ~/.config/systemd/user/rclone-gdrive.service
 ```
 - write config to service file
