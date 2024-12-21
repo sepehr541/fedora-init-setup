@@ -50,10 +50,19 @@ sudo dnf install gnome-shell-extension-pop-shell xprop
 - logout and log back in
 
 ### Shortcuts
-- Settings > Keyboard > View and Customize Shortcuts > Custom Shortcuts > Add Shortcut
-  - Launch Terminal
-  - `gnome-terminal` or `kitty`
-  - Ctrl + Alt + t
+```bash
+# switch to left/right workspace
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Alt>Left']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Alt>Right']"
+
+# move window to left/right workspace
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Control><Shift><Alt>Left']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Control><Shift><Alt>Right']"
+
+# move window to left/right display
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-left "['<Super><Shift>Left']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-right "['<Super><Shift>Right']"
+```
 
 ### Extensions
 #### Third Party Extensions
