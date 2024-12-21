@@ -297,7 +297,13 @@ RestartSec=15
 WantedBy=default.target
 ```
 - tell systemd to enable the service
+Fedora Workstation
 ```bash
 sudo systemctl --user daemon-reload
-sudo systemctl --user enable --now rclone-dropbox
+sudo systemctl --user enable --now rclone-gdrive
+```
+Fedora Silverblue / Bluefin
+```bash
+systemctl --user daemon-reload
+systemctl --user enable --now rclone-gdrive
 ```
