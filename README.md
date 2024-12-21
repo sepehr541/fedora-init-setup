@@ -122,16 +122,15 @@ echo "shell zsh" >> ~/.config/kitty/kitty.conf
   source ~/.zshrc
   ```
 - add container emoji to prompt to default Oh My Zsh
-  ```text
-    # in .zshrc
-    update_prompt_in_container() {
-    if [[ -n "$CONTAINER_ID" && "$PROMPT" != *"📦"* ]]; then
-        PROMPT="📦 $PROMPT"
-    elif [[ -z "$CONTAINER_ID" && "$PROMPT" == *"📦"* ]]; then
-        PROMPT="${PROMPT/📦 /}"  # Remove emoji when not in container
-    fi
-    }
-    precmd_functions+=(update_prompt_in_container)
+  ```zsh
+  update_prompt_in_container() {
+  if [[ -n "$CONTAINER_ID" && "$PROMPT" != *"📦"* ]]; then
+    PROMPT="📦 $PROMPT"
+  elif [[ -z "$CONTAINER_ID" && "$PROMPT" == *"📦"* ]]; then
+    PROMPT="${PROMPT/📦 /}"  # Remove emoji when not in container
+  fi
+  }
+  precmd_functions+=(update_prompt_in_container)
   ```
 - add zsh-autosuggestions plugin
   ```bash
