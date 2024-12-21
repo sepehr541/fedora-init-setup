@@ -254,16 +254,31 @@ amdgpu.sg_display=0 amdgpu.abmlevel=0
 
 ## Mount Google Drive via `rclone`
 [How to Use Google Drive in Linux](https://www.baeldung.com/linux/google-drive-guide#2-rclone)
-```
-sudo dnf install -y rclone
-rclone config
-# choose google drive (17 or 18)
-# leave everything empty
-mkdir GDrive
-rclone mount --daemon --vfs-cache-mode full google-drive:/ ./GDrive
-```
+- install `rclone`
+  ```bash
+  sudo dnf install -y rclone
+  ```
+- setup remote drive
+  ```
+  rclone config
+  ```
+  - choose google drive (18)
+  - accept defaults for everything (hit enter)
+  - enter name as gdrive
+  - accept defaults for everything (hit enter)
+- mount drive
+  ```
+  mkdir ~/GDrive
+  rclone mount --daemon --vfs-cache-mode full gdrive:/ ./GDrive
+  ```
 ### setup systemd service to automount on boot
 [modified version of this post's script](https://www.guyrutenberg.com/2021/06/25/autostart-rclone-mount-using-systemd/)
+- make service file
+```bash
+mkdir  ~/.config/systemd/user/
+nano  ~/.config/systemd/user/rclone-gdrive.service
+```
+- write config to service file
 ```
 [Unit]
 Description=Mount Google Drive (rclone)
@@ -273,7 +288,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/rclone mount --vfs-cache-mode full google-drive: %h/GDrive
+ExecStart=/usr/bin/rclone mount --vfs-cache-mode full gdrive: %h/GDrive
 Restart=on-failure
 RestartSec=15
 
@@ -281,6 +296,7 @@ RestartSec=15
 # Autostart after reboot
 WantedBy=default.target
 ```
+- tell systemd to enable the service
 ```bash
 sudo systemctl --user daemon-reload
 sudo systemctl --user enable --now rclone-dropbox
