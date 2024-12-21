@@ -226,13 +226,26 @@ wget https://gist.githubusercontent.com/cab404/aeb2482e1af6fc463e1154017c566560/
 
 ## Kernel Parameters
 ### AMD GPU
+- Fedora Workstation
+  ```bash
+  sudo nano /etc/default/grub
+  ```
+- Fedora Silverblue / Bluefin (immutable)
+  ```bash
+  rpm-ostree kargs --editor
+  ```
 ```bash
-sudo nano /etc/default/grub
 # append amdgpu.sg_display=0
 # append amdgpu.abmlevel=0 to fix panel brightness change when changing power profile
 # GRUB_CMDLINE_LINUX_DEFAULT="[...] quiet splash amdgpu.sg_display=0 amdgpu.abmlevel=0"
-sudo grub2-mkconfig
 ```
+```bash
+amdgpu.sg_display=0 amdgpu.abmlevel=0
+```
+- Fedora Workstation
+  ```bash
+  sudo grub2-mkconfig
+  ```
 
 ## CA certificates
 - certs are under `/etc/ssl/certs/`
