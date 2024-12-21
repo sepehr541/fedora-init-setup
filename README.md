@@ -73,7 +73,6 @@ sudo dnf install gnome-shell-extension-pop-shell xprop
 - Fonts > Scaling Factor > 1.20
 - Dracula Theme
 ```bash
-sudo dnf install -y gnome-shell-extension-user-theme
 wget "https://github.com/dracula/gtk/archive/master.zip" -O temp.zip
 unzip temp.zip
 rm temp.zip
