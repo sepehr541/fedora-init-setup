@@ -62,6 +62,8 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Contr
 # move window to left/right display
 gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-left "['<Super><Shift>Left']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-right "['<Super><Shift>Right']"
+
+gsettings set org.gnome.shell.keybindings show-screenshot-ui "['Print', '<Super><Shift>s']"
 ```
 
 ### Extensions
