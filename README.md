@@ -24,7 +24,8 @@ us.zoom.Zoom \
 org.qbittorrent.qBittorrent \
 com.bambulab.BambuStudio \
 com.protonvpn.www \
-com.bitwarden.desktop
+com.bitwarden.desktop \
+app.zen_browser.zen
 ```
 
 ## DNF packages
