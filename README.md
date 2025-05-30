@@ -260,6 +260,7 @@ amdgpu.sg_display=0 amdgpu.abmlevel=0
 ## CA certificates
 - certs are under `/etc/ssl/certs/`
 - e.g., `/etc/ssl/certs/Digicert_Global_Root_CA.crt`
+- if not present download from [Digicert](https://www.digicert.com/kb/digicert-root-certificates.htm)
 
 ## Caps Lock as Ctrl
 - GNOME Tweaks > Keyboard > Additional Layout Options > Ctrl Position > Caps Lock as Ctrl
